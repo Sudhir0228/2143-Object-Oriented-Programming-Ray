@@ -1,4 +1,3 @@
-# 2143-Object-Oriented-Programming-Ray
 ## Sudhir Ray 
 #### Repo:  2143-Object-Oriented-Programming-Ray
 #### Email: raysudhir30@gmail.com / sray0228@my.msutexas.edu
