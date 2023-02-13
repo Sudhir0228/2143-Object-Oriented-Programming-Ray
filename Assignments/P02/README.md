@@ -8,7 +8,7 @@ This program contains a linked list vector class with methods to add values, rem
 |   #   | File     | Description                      |
 | :---: | -------- | -------------------------------- |
 |   1   | [main.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P02/main.cpp) | Main driver of my vector class 2. |
-|   2   | [banner.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P01/Banner.cpp) | My own Banner for P01. |
+|   2   | [banner.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P02/Banner.cpp) | My own Banner for P02. |
 
 
 
