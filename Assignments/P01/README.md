@@ -20,7 +20,6 @@ This program contains a linked list vector class with methods to add values, rem
 ### Example Command
 
 - v3.print(outfile);
-
--v4.pushRear(v3);
+- v4.pushRear(v3);
 
 
