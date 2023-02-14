@@ -11,8 +11,7 @@
  *       This program implements a class that allows a singly-linked list to be
  *used similarly to a vector. The linked list can add and remove nodes with data
  *values, search existing nodes' values for a specific value, and it can be
- *sorted in ascending numerical order.  It also has print functionality to
- *display the linked list similarly to an array.
+ *sorted.  It also has print functionality to display the linked list similarly to an array.
  *
  *  Usage:
  *       N/A
