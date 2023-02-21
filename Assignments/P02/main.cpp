@@ -66,8 +66,7 @@ struct Node {          // node for our linked list
  *      int       popRear()
  *      int       popAt(int loc)
  *      int       find(int val)
- *      void      print(ostream &outfile)
- *      void      print()
+ *   
  *
  *
  * Private Methods:
