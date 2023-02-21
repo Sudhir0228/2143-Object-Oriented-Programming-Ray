@@ -9,6 +9,7 @@ This program contains a linked list vector class with methods to add values, rem
 | :---: | -------- | -------------------------------- |
 |   1   | [main.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P02/main.cpp) | Main driver of my vector class 2. |
 |   2   | [banner.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P02/Banner.cpp) | My own Banner for P02. |
+|   3   | [output.txt](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P02/output.txt) | Output file for P02. |
 
 
 
@@ -18,7 +19,8 @@ This program contains a linked list vector class with methods to add values, rem
 
 ### Example Command
 
-- None for now.
+- v3 = v2 - v1;        // subtracts v1 from v2
+- MyVector v4 = v1;    // assigns v1 to v4
 
 
 
