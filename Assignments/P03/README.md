@@ -12,7 +12,7 @@ The class creates the syntax for visualization of a linked list.
 | :---: | -------- | -------------------------------- |
 |   1   | [main.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/main.cpp) | Main driver of Graphiz class. |
 |   2   | [banner.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/Banner.cpp) | My own Banner for P03. |
-|   3   | [output.txt](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/output.txt) | Output file for P03. |
+|   3   | [output.txt](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/test.out) | Output file for P03. |
 
 
 
