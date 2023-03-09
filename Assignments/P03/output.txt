@@ -1,1 +1,24 @@
+Sudhir Ray
+March 06, 2023
+Spring 2143
 
+digraph graphiz {
+  rankdir=LR
+  bgcolor= "grey" 
+  label = "Linked List" 
+  node [shape = record ,color = black]
+  1 [label="1", shape="polygon", color="red"];
+  2 [label="2", shape="ellipse", color="blue"];
+  3 [label="3", shape="diamond", color="green"];
+  4 [label="4", shape="triangle", color="yellow"];
+  5 [label="5", shape="star", color="yellow:red"];
+  6 [label="6", shape="note", color="deeppink3:pink"];
+  null [arrowhead =normal,arrowtail =none,color =black,dir=none]
+  1-> 2 [arrowhead =vee,arrowtail =vee,color = "red" ,dir=both];
+  2-> 3 [arrowhead =diamond,arrowtail =diamond,color = "blue" ,dir=one];
+  3-> 4 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=both];
+  4-> 5 [arrowhead =crow,arrowtail =crow,color = "yellow" ,dir=one];
+  5-> 6 [arrowhead =icurve,arrowtail =icurve,color = "yellow:red" ,dir=both];
+  6-> 5 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  3-> 6 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=both];
+}
