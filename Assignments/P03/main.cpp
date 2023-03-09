@@ -29,6 +29,9 @@
 
 using namespace std;
 
+string defaultEdge = "  null [arrowhead = normal , arrowtail = none , "
+                     "color = \"black\" , dir = one ]";
+
 /**
  * Node
  *
@@ -186,8 +189,9 @@ public:
    * Returns:
    *      N/A
    */
-
+  int maxNode = 0;
   void print() {
+
     cout << "digraph graphiz {" << endl;
     cout << "  "
          << "rankdir=LR" << endl;
@@ -205,6 +209,7 @@ public:
            << "\"" << node.label << "\", shape="
            << "\"" << node.shape << "\""
            << ", color=\"" << node.color << "\"];" << endl;
+      maxNode = nodes.size();
     }
     cout << "  null [arrowhead ="
          << "normal"
@@ -228,12 +233,13 @@ public:
            << "dir=" << edge.dir << "]"
            << ";" << endl;
     }
+    cout << "  " << maxNode << "->" << defaultEdge << ";" << endl;
 
     cout << "}" << endl;
   };
 
   /**
-   * Public : print
+   * Public : printfile
    *
    * Description:
    *      Prints the "DOT" syntax of the linked list to the output file. The
@@ -288,10 +294,7 @@ public:
          << "none]" << endl;
 
     for (auto edge : edges) {
-      /**
 
-      **/
-      // 1:e -> 2:w[arrowhead=vee, arrowtail=dot, color=cyan, dir=forward];
       file << "  " << edge.from << ""
            << "->"
            << " " << edge.to << " [arrowhead =" << edge.arrowhead << ","
@@ -300,6 +303,8 @@ public:
            << "dir=" << edge.dir << "]"
            << ";" << endl;
     }
+    file << "  " << maxNode << "->" << defaultEdge << ";" << endl;
+
     file << "}" << endl;
     file.close();
   }
