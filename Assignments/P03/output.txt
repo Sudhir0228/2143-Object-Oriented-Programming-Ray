@@ -21,4 +21,5 @@ digraph graphiz {
   5-> 6 [arrowhead =icurve,arrowtail =icurve,color = "yellow:red" ,dir=both];
   6-> 5 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
   3-> 6 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=both];
+  6->  null [arrowhead = normal , arrowtail = none , color = "black" , dir = one ];
 }
