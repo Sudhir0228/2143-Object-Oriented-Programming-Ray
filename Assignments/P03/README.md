@@ -1,7 +1,8 @@
 ## P03 - Graphiz Class
 ### Sudhir Ray
 ### Description:
-        Creates a class Graphiz that outputs "DOT" syntax code for data visualizaion in Graphiz compiler. The class creates the syntax for visualization of a linked list.
+        Creates a class Graphiz that outputs "DOT" syntax code for data visualizaion in Graphiz compiler.
+        The class creates the syntax for visualization of a linked list.
 
 
 ### Files
