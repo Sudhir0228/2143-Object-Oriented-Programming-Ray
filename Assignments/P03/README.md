@@ -13,6 +13,9 @@ The class creates the syntax for visualization of a linked list.
 |   1   | [main.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/main.cpp) | Main driver of Graphiz class. |
 |   2   | [banner.cpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/Banner.cpp) | My own Banner for P03. |
 |   3   | [test.out](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/test.out) | Output file for P03. |
+|   4   | [ll.hpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/test.out) | Header file for linked list. |
+|   5   | [dll.hpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/test.out) | Header file for Double linked list. |
+|   6   | [bst.hpp](https://github.com/Sudhir0228/2143-Object-Oriented-Programming-Ray/blob/main/Assignments/P03/test.out) | Header file for Binary Search Tree. |
 
 
 
