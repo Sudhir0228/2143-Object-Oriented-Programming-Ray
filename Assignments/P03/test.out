@@ -2,24 +2,77 @@ Sudhir Ray
 March 06, 2023
 Spring 2143
 
-digraph graphiz {
+Linked List
+digraph Linkedlist {
   rankdir=LR
   bgcolor= "grey" 
   label = "Linked List" 
   node [shape = record ,color = black]
   1 [label="1", shape="polygon", color="red"];
   2 [label="2", shape="ellipse", color="blue"];
-  3 [label="3", shape="diamond", color="green"];
-  4 [label="4", shape="triangle", color="yellow"];
-  5 [label="5", shape="star", color="yellow:red"];
-  6 [label="6", shape="note", color="deeppink3:pink"];
+  3 [label="a", shape="diamond", color="green"];
+  4 [label="3", shape="triangle", color="yellow"];
+  5 [label="4", shape="star", color="yellow:red"];
+  6 [label="5", shape="note", color="deeppink3:pink"];
   null [arrowhead =normal,arrowtail =none,color =black,dir=none]
-  1-> 2 [arrowhead =vee,arrowtail =vee,color = "red" ,dir=both];
-  2-> 3 [arrowhead =diamond,arrowtail =diamond,color = "blue" ,dir=one];
-  3-> 4 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=both];
-  4-> 5 [arrowhead =crow,arrowtail =crow,color = "yellow" ,dir=one];
-  5-> 6 [arrowhead =icurve,arrowtail =icurve,color = "yellow:red" ,dir=both];
-  6-> 5 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
-  3-> 6 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=both];
+  1-> 2 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  2-> 3 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  3-> 4 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  4-> 5 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  5-> 6 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  3-> 5 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=both];
   6->  null [arrowhead = normal , arrowtail = none , color = "black" , dir = one ];
 }
+
+Double Linked List
+digraph DoubleLinkedList {
+  rankdir=LR
+  bgcolor= "grey" 
+  label = "Double Linked List" 
+  node [shape = record ,color = black]
+  1 [label="null", shape="polygon", color="black"];
+  2 [label="1", shape="ellipse", color="blue"];
+  3 [label="2", shape="diamond", color="green"];
+  4 [label="3", shape="triangle", color="yellow"];
+  5 [label="4", shape="star", color="yellow:red"];
+  6 [label="5", shape="note", color="deeppink3:pink"];
+  7 [label="6", shape="square", color="darkgoldenrod3:gold"];
+  1-> 2 [arrowhead =none,arrowtail =vee,color = "black" ,dir=both];
+  2-> 3 [arrowhead =diamond,arrowtail =diamond,color = "blue" ,dir=one];
+  3-> 4 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=one];
+  4-> 5 [arrowhead =crow,arrowtail =crow,color = "yellow" ,dir=one];
+  5-> 6 [arrowhead =icurve,arrowtail =icurve,color = "yellow:red" ,dir=one];
+  6-> 7 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  7-> 6 [arrowhead =inv,arrowtail =inv,color = "darkgoldenrod3:gold" ,dir=one];
+  6-> 5 [arrowhead =dot,arrowtail =dot,color = "deeppink3:pink" ,dir=one];
+  5-> 4 [arrowhead =icurve,arrowtail =icurve,color = "yellow:red" ,dir=one];
+  4-> 3 [arrowhead =crow,arrowtail =crow,color = "yellow" ,dir=one];
+  3-> 2 [arrowhead =curve,arrowtail =curve,color = "green" ,dir=one];
+  7->  null [arrowhead = normal , arrowtail = none , color = "black" , dir = one ];
+}
+
+Binary Search Tree
+digraph BST {
+  rankdir=TD
+  bgcolor= "grey" 
+  label = "Binary Search Tree" 
+  node [shape = record ,color = "black"  ]
+  1 [label= 20,shape = polygon,color = "red" ]
+  4 [label= 14,shape = triangle,color = "yellow" ]
+  7 [label= 7,shape = square,color = "darkgoldenrod3:gold" ]
+  8 [label= 8,shape = folder,color = "cornflowerblue:blue4" ]
+  9 [label= 9,shape = tab,color = "cyan" ]
+  6 [label= 16,shape = note,color = "deeppink3:pink" ]
+  2 [label= 22,shape = ellipse,color = "blue" ]
+  3 [label= 33,shape = diamond,color = "green" ]
+  5 [label= 55,shape = star,color = "yellow:red" ]
+  1:left  -> 4;
+  1:right -> 2;
+  4:left  -> 7;
+  4:right -> 6;
+  7:right -> 8;
+  8:right -> 9;
+  2:right -> 3;
+  3:right -> 5;
+}
+
