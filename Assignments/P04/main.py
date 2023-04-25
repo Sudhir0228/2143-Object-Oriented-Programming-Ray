@@ -55,12 +55,12 @@ if __name__ == '__main__':
   d1 = Die()
   d2 = Die(20)
   d3 = Dice(10, 5)
-  #d4 = Dice("8.d.20")
+  d4 = Dice("8.d.20")
 
   dieTester(d1, 10)
   dieTester(d2, 20)
   dieTester(d3, 10, "max")
   dieTester(d3, 10, "min")
   dieTester(d3, 10, "avg")
-  #dieTester(d4, 20, "max")
+  dieTester(d4, 20, "max")
 
