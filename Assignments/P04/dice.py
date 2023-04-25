@@ -21,9 +21,7 @@
 #dice.py
 
 import random
-import sys
 from rich import print
-
 """
  Class Die
 
@@ -37,8 +35,8 @@ Methods:
    
 """
 
-class Die(object):
 
+class Die(object):
   """
      __init__
      Description:
@@ -52,6 +50,7 @@ class Die(object):
       self.sides = 6
     else:
       self.sides = sides
+
   """
      roll
      Description:
@@ -95,7 +94,6 @@ Methods:
 
 
 class Dice:
-
   """
      __init__
      Description:
@@ -104,17 +102,19 @@ class Dice:
          N/A
   """
 
-  def __init__(self, sides=None, num_dice=1):
-    if (sides == None):
-      print("Need to pass in sides!!!")
-      sys.exit()
+  def __init__(self, sides, howmany=None):
+    if isinstance(sides, int):
+      pass
+    elif isinstance(sides, str):
+      parts = sides.split(".")
+      howmany = int(parts[0])
+      sides = int(parts[2])
 
-    ## sides
     self.sides = sides
 
     self.dice = []
 
-    for die in range(num_dice):
+    for die in range(howmany):
       self.dice.append(Die(sides))
 
   """
@@ -146,50 +146,57 @@ class Dice:
       s = s + str(d)
     s = s + "\n]\n"
     return s
-"""
+
+  """
      max
      Description:
             Appends each roll in a list and returns the max among them.
      Returns:
          The maximum of rolls.
   """
+
   def max(self) -> int:
     results = []
     for i in self.dice:
       results.append(i.roll())
     return max(results)
-"""
+
+  """
      min
      Description:
             Appends each roll in a list and returns the min among them.
      Returns:
          The minimum of rolls.
-"""
+  """
+
   def min(self) -> int:
     results = []
     for i in self.dice:
       results.append(i.roll())
     return min(results)
-"""
+
+  """
      avg
      Description:
             Appends each roll in a list and returns the average among them.
      Returns:
          The average of rolls.
-"""
+  """
+
   def avg(self) -> int:
     results = []
     for i in self.dice:
       results.append(i.roll())
     return sum(results) / len(results)
 
-"""
+  """
      roll
      Description:
             Calls the function based on the input.
      Returns:
          The value according to input (max, min, avg, sum).
-"""
+  """
+
   def roll(self, rollType=None):
     if rollType == 'max':
       return self.max()
@@ -209,4 +216,3 @@ if __name__ == '__main__':
   print(D2)
   print()
   d3 = Dice(10, 5)
-
