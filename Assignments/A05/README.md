@@ -19,5 +19,6 @@ Create a UML design for a D&D style game. Includes all of the different classes 
 ### Weapon:
 ![weapon](https://user-images.githubusercontent.com/66984542/236086814-911e4af0-f230-4313-82ac-f64c3ec7a7d3.png)
 
-### Monster:
-![monster](https://user-images.githubusercontent.com/66984542/236086870-4639f895-c248-42ed-9c9d-c4b9926fba41.png)
+### Diagram:
+![class](https://user-images.githubusercontent.com/66984542/236357015-9ca43ea1-5f09-4ea9-9ef7-61f09f0775e4.png)
+
